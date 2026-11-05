@@ -1,4 +1,4 @@
-/* ===== CSS-ПЕРЕМЕННЫЕ ===== */
+
 :root {
     --color-main: silver;
     --color-accent: black;
@@ -24,14 +24,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    overflow-x: hidden; /* нет горизонтальной прокрутки */
+    overflow-x: hidden; 
 }
 
 header, main, footer {
     padding: 20px 40px;
 }
 
-/* ===== HEADER (sticky) ===== */
+
 header {
     border-bottom: 2px solid var(--color-main);
     position: sticky;
@@ -45,7 +45,7 @@ h1, h2 {
     font-family: var(--font-heading);
 }
 
-/* ===== FLEXBOX: навигационное меню ===== */
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +83,7 @@ h1, h2 {
     outline-offset: 3px;
 }
 
-/* ===== КАРТОЧКИ НАВЫКОВ ===== */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +121,7 @@ h1, h2 {
     opacity: 0.3;
 }
 
-/* ===== FLEXBOX: карточки «Гаджеты недели» ===== */
+
 .gadgets-flex {
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +160,7 @@ h1, h2 {
     margin: 10px 0 5px;
 }
 
-/* ===== GRID: дашборд «Сравнение характеристик» ===== */
+
 .grid-dashboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -198,7 +198,7 @@ h1, h2 {
     color: #bbbbbb;
 }
 
-/* ===== ССЫЛКИ (общие) ===== */
+
 a {
     color: var(--color-main);
     text-decoration: none;
@@ -223,7 +223,7 @@ a:focus {
     outline-offset: 3px;
 }
 
-/* ===== IMG (общий стиль) ===== */
+
 img {
     display: block;
     margin: 20px 0;
@@ -231,7 +231,7 @@ img {
     border-radius: 8px;
 }
 
-/* ===== ASIDE ===== */
+
 aside {
     background-color: var(--color-bg-light);
     border-left: 4px solid var(--color-main);
@@ -239,7 +239,6 @@ aside {
     margin: 20px 0;
 }
 
-/* ===== ФОРМА ===== */
 form {
     display: flex;
     flex-direction: column;
@@ -281,13 +280,13 @@ input, textarea {
     box-shadow: 0 0 10px var(--color-main);
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     border-top: 2px solid var(--color-main);
     text-align: center;
 }
 
-/* ===== КНОПКА НАВЕРХ (fixed) ===== */
+
 .to-top {
     position: fixed;
     bottom: 30px;
@@ -316,26 +315,22 @@ footer {
     box-shadow: 0 0 10px var(--color-main);
 }
 
-/* ============================================
-   МЕДИА-ЗАПРОСЫ (адаптивность)
-   ============================================ */
 
-/* Планшет: до 900px */
 @media (max-width: 900px) {
     header, main, footer {
         padding: 15px 20px;
     }
 
     .gadget-card {
-        flex: 1 1 45%;   /* 2 карточки в ряд */
+        flex: 1 1 45%;   
     }
 
     .grid-dashboard {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Мобильные: до 600px */
+
 @media (max-width: 600px) {
     .nav {
         flex-direction: column;
@@ -347,12 +342,12 @@ footer {
     }
 
     .gadget-card {
-        flex: 1 1 100%;   /* 1 карточка в ряд */
+        flex: 1 1 100%;   
         max-width: 100%;
     }
 
     .grid-dashboard {
-        grid-template-columns: 1fr; /* 1 колонка */
+        grid-template-columns: 1fr; 
     }
 
     .card {
@@ -435,9 +430,9 @@ footer {
     background-color: #000000;
 }
 .btn:hover {
-    color: #000000;               /* Слова становятся черными */
-    background-color: #ffffff;    /* Сама кнопка становится черной */
-    border: 1px solid silver;     /* Добавляем рамку, чтобы кнопку было видно на темном фоне */
+    color: #000000;               
+    background-color: #ffffff;   
+    border: 1px solid silver;     
 }
 
 body.light-theme {
