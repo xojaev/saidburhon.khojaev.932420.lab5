@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе — Ходжаев С. Д.</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+    
+
+    
+    <style>
+        input, textarea {
+            height: 40px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align: center;">Ходжаев С. Д.</h1>
+        <p>Техногик и обзорщик гаджетов</p>
+
+        <nav class="nav">
+            <a href="#skills">Навыки</a>
+            <a href="#gadgets">Гаджеты недели</a>
+            <a href="#compare">Сравнение</a>
+            <a href="#projects">Проекты</a>
+            <a href="#feedback">Связь</a>
+        </nav>
+    </header>
+    
+    <main>
+       
+    <section id="dom-lab">
+        <h2>Интерактивный список гаджетов</h2>
+    
+        <div class="controls">
+            <button id="theme-toggle" class="btn">Сменить тему</button>
+            <button id="add-gadget" class="btn">Добавить гаджет</button>
+            <button id="delete-last" class="btn">Удалить последний</button>
+            <button id="toggle-list" class="btn">Скрыть/Показать список</button>
+        </div>
+
+        
+        <div id="gadget-list" class="gadget-grid">
+        
+        </div>
+    </section>
+        <section id="skills">
+            <h2>Навыки</h2>
+            <div class="card-container">
+                <div class="card">Тестирование смартфонов и ноутбуков</div>
+                <div class="card">Написание технических обзоров</div>
+                <div class="card">Сравнение характеристик устройств</div>
+                <div class="card">Монтаж видеообзоров</div>
+            </div>
+        </section>
+
+       
+        <section id="gadgets">
+            <h2>Гаджеты недели</h2>
+            <div class="gadgets-flex">
+                <article class="gadget-card">
+                    <img src="../img/iphone15pro.jpg" alt="iPhone 15 Pro">
+                    <h3>iPhone 15 Pro</h3>
+                    <p>Фишка: титановый корпус и чип A17 Pro</p>
+                </article>
+
+                <article class="gadget-card">
+                    <img src="../img/asus.jpg" alt="Asus TUF Gaming F15">
+                    <h3>Asus TUF Gaming F15</h3>
+                    <p>Фишка: 144 Гц экран и RTX 4060</p>
+                </article>
+
+                <article class="gadget-card">
+                    <img src="../img/s24.jpg" alt="Samsung Galaxy S24">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p>Фишка: встроенный ИИ-переводчик</p>
+                </article>
+
+                <article class="gadget-card">
+                    <img src="../img/sony.jpg" alt="Sony WH-1000XM5">
+                    <h3>Sony WH-1000XM5</h3>
+                    <p>Фишка: лучшее шумоподавление</p>
+                </article>
+            </div>
+        </section>
+
+      
+        <section id="compare">
+            <h2>Сравнение характеристик</h2>
+            <div class="grid-dashboard">
+                <div class="grid-item">
+                    <h3>Процессор</h3>
+                    <p><data value="3.78">3.78 ГГц</data></p>
+                    <span>Snapdragon 8 Gen 3</span>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Экран</h3>
+                    <p><data value="6.8">6.8"</data></p>
+                    <span>AMOLED, 120 Гц</span>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Батарея</h3>
+                    <p><data value="5000">5000 мА·ч</data></p>
+                    <span>Быстрая зарядка 45 Вт</span>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Камера</h3>
+                    <p><data value="200">200 МП</data></p>
+                    <span>Оптический зум 10x</span>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Память</h3>
+                    <p><data value="1024">1 ТБ</data></p>
+                    <span>LPDDR5X + UFS 4.0</span>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Вес</h3>
+                    <p><data value="232">232 г</data></p>
+                    <span>Титановый корпус</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <ol>
+                <li>Обзор iPhone 15: плюсы и минусы год спустя</li>
+                <li>Сравнение Asus TUF Gaming F15 и A15</li>
+                <li>Тест-драйв беспроводных наушников</li>
+                <li>Обзор флагманского планшета для работы</li>
+            </ol>
+        </section>
+
+        <aside>
+            <h2>Любимые технологии</h2>
+            <p>Любимый бренд техники — <strong>Apple</strong>.</p>
+            <p>Любимая категория устройств — <strong>смартфоны и ноутбуки</strong>.</p>
+        </aside>
+
+        <section id="feedback">
+            <h2>Обратная связь</h2>
+            <form action="/submit-feedback" method="POST">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Расскажите, что хотите сообщить..." rows="5"></textarea>
+
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <section id="js-result"></section>
+    <footer>
+        <p>&copy; 2026 Ходжаев С. Д. Все права защищены.</p>
+    </footer>
+
+    <button class="to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Наверх">↑</button>
+    <script src="script.js"></script>
+    <script src="dom.js"></script>
+</body>
+</html>
